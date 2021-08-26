@@ -1,3 +1,16 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -57,6 +70,16 @@ body {
   right: 0;
 }
 
+.menu__list:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 530px;
+  background-color: rgba(255, 255, 255, 0.2);
+  bottom: -40px;
+  right: 0;
+}
+
 .menu__item {
   margin-right: 92px;
 }
@@ -66,7 +89,7 @@ body {
 }
 
 .menu__logo {
-  padding-top: 24px;
+  transform: translateY(25px);
   margin: 0 auto;
   max-width: 150px;
   width: 100%;
@@ -86,6 +109,8 @@ body {
 
 .header__titles {
   text-align: center;
+  margin-bottom: 82px;
+  transform: translateX(20px);
 }
 
 .header__title {
@@ -105,23 +130,19 @@ body {
   border-radius: 50px;
   width: 60px;
   height: 5px;
-  bottom: -50px;
+  bottom: -45px;
 }
 
 .header__link {
   display: inline-block;
   max-width: 200px;
   width: 100%;
-  padding: 24px 0;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
-}
-
-.header__link:first-child {
-
+  background-size: initial;
 }
 
 .header__link--accent {
@@ -129,9 +150,19 @@ body {
   margin-right: 40px;
 }
 
+.header__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.header__social {
+  transform: translateY(10px);
+}
+
 .icon {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
+  font-size: 0;
+  border-radius: 50%;
 }
 
 .header__link--facebook {
@@ -144,4 +175,31 @@ body {
 
 .header__link--instagram {
   background-image: url('../images/icons/networks/instagram.svg');
+}
+
+.header__arrow {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  font-size: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-image: url('../images/icons/down-btn.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+}
+
+.header__arrow:before {
+  content: "";
+  position: absolute;
+  height: 454px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: -454px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
