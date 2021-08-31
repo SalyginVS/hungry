@@ -44,6 +44,7 @@ body {
 .header {
   position: relative;
   padding-bottom: 82px;
+  margin-bottom: 100px;
   font-weight: 700;
   font-size: 12px;
   line-height:1.7;
@@ -224,4 +225,15 @@ body {
   width: 1px;
   height: 82px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about {
+  color: #000000;
+}
+
+.about__img {
+  max-width: 475px;
+  max-height: 475px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
 }
