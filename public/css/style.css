@@ -34,6 +34,7 @@ body {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.5em;
+  text-transform: uppercase;
 }
 
 .menu,
@@ -76,7 +77,7 @@ body {
   bottom: 0;
   left: 0;
   background-color: #000000;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .menu {
@@ -255,9 +256,12 @@ body {
 .content__inner  {
   transform: translateY(-5px);
   text-align: center;
-  margin-right: 80px;
   max-width: 600px;
   width: 100%;
+}
+
+.content__inner--right {
+  margin-right: 80px;
 }
 
 .content__bold {
@@ -267,24 +271,63 @@ body {
   line-height: 1.6;
 }
 
-.content__img {
+.content__box {
   position: relative;
-/*  max-width: 475px;
-  width: 100%;
-  max-height: 475px;
-  height: 100%;*/
   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-  border-radius: 5px;
 }
 
-.content__img:before {
+.content__box:before {
   content: "";
   position: absolute;
   top: 24%;
-  right: -26%;
   width: 250px;
   height: 250px;
   border: 20px solid #e8c300;
   filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
   border-radius: 5px;
+}
+
+.content__box--right:before {
+  right: -26%;
+}
+
+.content__box--left {
+  margin-right: 80px;
+}
+
+.content__box--left:before {
+  left: -26%;
+}
+
+.content__img {
+  border-radius: 5px;
+}
+
+.team {
+  position: relative;
+  margin-bottom: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.team__slogan {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+.team__content {
+  direction: rtl;
 }
