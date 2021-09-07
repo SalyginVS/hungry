@@ -37,6 +37,12 @@ body {
   text-transform: uppercase;
 }
 
+.slogan__content {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
 .menu,
 .header__titles {
   text-transform: uppercase;
@@ -240,6 +246,10 @@ body {
   align-items: center;
 }
 
+.content--right {
+  direction: rtl;
+}
+
 .content__title {
   position: relative;
   margin-bottom: 30px;
@@ -258,10 +268,12 @@ body {
   text-align: center;
   max-width: 600px;
   width: 100%;
+  direction: ltr;
 }
 
 .content__inner--right {
   margin-right: 80px;
+  direction: unset;
 }
 
 .content__bold {
@@ -287,10 +299,6 @@ body {
   border-radius: 5px;
 }
 
-.content__box--right:before {
-  right: -26%;
-}
-
 .content__box--left {
   margin-right: 80px;
 }
@@ -299,12 +307,17 @@ body {
   left: -26%;
 }
 
+.content__box--right:before {
+  right: -26%;
+}
+
 .content__img {
   border-radius: 5px;
 }
 
 .team {
   position: relative;
+  padding-bottom: 100px;
   margin-bottom: 100px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -322,12 +335,3 @@ body {
   opacity: 0.5;
 }
 
-.team__slogan {
-  text-align: center;
-  margin-bottom: 40px;
-  padding-top: 40px;
-}
-
-.team__content {
-  direction: rtl;
-}
