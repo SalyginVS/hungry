@@ -89,7 +89,7 @@ body {
   margin-bottom: 100px;
   font-weight: 700;
   font-size: 12px;
-  line-height:1.7;
+  line-height: 1.7;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -285,7 +285,7 @@ body {
   bottom: -20px;
 }
 
-.content__inner  {
+.content__inner {
   text-align: center;
   max-width: 600px;
   width: 100%;
@@ -340,8 +340,12 @@ body {
   border-radius: 5px;
 }
 
+.book__content {
+  margin-left: 55px;
+}
+
 .book__form {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .book__wrap {
@@ -371,6 +375,24 @@ body {
 .book__text:nth-child(even),
 .book__choose:nth-child(even) {
   margin-right: 0;
+}
+
+.book__text:focus,
+.book__choose:focus {
+  outline: none;
+}
+
+.book__choose {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-image: url("../images/icons/errow.svg");
+  background-repeat: no-repeat;
+  /*background-position: right center;*/
+  background-position: 103% 50%;
 }
 
 .book__btn {
