@@ -6,6 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Hungry people | The main page</title>
@@ -191,7 +192,7 @@
             </div>
             
             <button class="book__btn" type="submit">book now</button>
-            
+          
           </form>
         
         </div>
@@ -211,9 +212,111 @@
     </div>
   
   </section>
+  
+  <section class="section__right specialties" style="background-image: url('images/background/specialties-bg.jpg')">
+    <div class="container">
+      
+      <span class="slogan slogan__content">specialties</span>
+      
+      <div class="swiper mySwiper specialties__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide specialties__content content content--right">
+            
+            <div class="content__inner">
+              
+              <h2 class="content__title">
+                chocolate pancakes
+              </h2>
+              
+              <p class="content__bold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis at velit maximus, molestie est a, tempor magna.
+              </p>
+              <p>
+                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat,
+                dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+                feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+              </p>
+            
+            </div>
+            
+            <div class=" content__box content__box--left">
+              <img class="content__img" src="images/content/slider/dessert.jpg" alt="about">
+            </div>
+          </div>
+          <div class="swiper-slide specialties__content content content--right">
+            
+            <div class="content__inner">
+              
+              <h2 class="content__title">
+                chocolate pancakes
+              </h2>
+              
+              <p class="content__bold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis at velit maximus, molestie est a, tempor magna.
+              </p>
+              <p>
+                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat,
+                dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+                feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+              </p>
+            
+            </div>
+            
+            <div class=" content__box content__box--left">
+              <img class="content__img" src="images/content/slider/dessert.jpg" alt="about">
+            </div>
+          </div>
+          <div class="swiper-slide specialties__content content content--right">
+            
+            <div class="content__inner">
+              
+              <h2 class="content__title">
+                chocolate pancakes
+              </h2>
+              
+              <p class="content__bold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis at velit maximus, molestie est a, tempor magna.
+              </p>
+              <p>
+                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat,
+                dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+                feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+              </p>
+            
+            </div>
+            
+            <div class=" content__box content__box--left">
+              <img class="content__img" src="images/content/slider/dessert.jpg" alt="about">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+    </div>
+  </section>
 
 
 </main>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".specialties__slider", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 
 </body>
 </html>
